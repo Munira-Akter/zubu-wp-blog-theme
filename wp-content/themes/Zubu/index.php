@@ -53,42 +53,16 @@
                     </div>
                 </div>
                 <div class="collapse navbar-collapse" id="themefie_main_menu">
-                    <ul class="navbar-nav menu-open text-center">
-                        <li class="current-menu-item menu-item-has-children">
-                            <a href="home-1.html">HOME</a>
-                            <ul class="sub-menu">
-                                <li><a href="home-1.html">Home 01</a></li>
-                                <li><a href="home-2.html">Home 02</a></li>
-                                <li><a href="home-3.html">Home 03</a></li>
-                                <li><a href="home-4.html">Home 04</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="home-4.html">FEATURES</a>
-                        </li>
-                        <li class="menu-item-has-children">
-                            <a href="#">PAGES</a>
-                            <ul class="sub-menu">
-                                <li><a href="single.html">Blog</a></li>
-                                <li><a href="single-blog-2.html">Blog 02</a></li>
-                                <li><a href="single-blog-3.html">Blog 03</a></li>
-                                <li><a href="single-blog-4.html">Blog 04</a></li>
-                                <li><a href="single-blog-full.html">Blog 05</a></li>
-                                <li><a href="gallery-blog.html">Gallery Blog</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="home-3.html">LIFESTYLE</a>
-                        </li>
-                        <li>
-                            <a href="about.html">ABOUT</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">CONTACT</a>
-                        </li>
-                    </ul>
+
+                    <?php 
+                        wp_nav_menu([
+                            'theme_location' => 'primary_menu',
+                            'conatiner' => '',
+                            'menu_class' => 'navbar-nav menu-open text-center',
+                            'menu_id' => '',
+                        ])
+                    ?>
+
                 </div>
                 <div class="nav-right-part text-end nav-right-part-desktop">
                     <ul>

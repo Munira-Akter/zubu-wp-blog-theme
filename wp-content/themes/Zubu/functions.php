@@ -16,6 +16,14 @@ add_theme_support('custom-logo');
 
 add_action('after_setup_theme','theme_support');
 
+// menu register
+
+register_nav_menus([
+
+    'primary_menu' => 'Primary Menu',
+
+]);
+
 
 // Style & Script File Load
 

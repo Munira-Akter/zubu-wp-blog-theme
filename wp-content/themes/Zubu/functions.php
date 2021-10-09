@@ -82,7 +82,16 @@ function style_scripts(){
 
 }
 
-add_action("wp_enqueue_scripts","style_scripts")
+add_action("wp_enqueue_scripts","style_scripts");
+
+
+// register widget sidebar
+
+register_sidebar([
+    'name' => 'Footer Widegrt',
+    'description' => '',
+    'id' => 'zubu-footer-one',
+])
 
 
 ?>

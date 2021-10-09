@@ -25,6 +25,16 @@ register_nav_menus([
 ]);
 
 
+
+// register Author type
+
+register_post_type('zubu_author' ,[
+
+    
+
+]);
+
+
 // Style & Script File Load
 
 function style_scripts(){ 

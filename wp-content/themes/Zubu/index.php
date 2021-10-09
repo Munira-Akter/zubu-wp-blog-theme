@@ -103,6 +103,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-9 col-md-8">
+                
                     <div class="blog-post-item-wrap">
                         <div class="post-content">
                             <h6>Fashion</h6>
@@ -125,129 +126,43 @@
                             libero, nec euismod velit ullamcorper vitae.</p>
                         <a class="link-btn" href="single.html">Read More</a>
                     </div>
+
+
                     <div class="row">
+
+                        <?php while(have_posts()) : the_post();?>
+
+
                         <div class="col-lg-6">
+                            <?php if(has_post_thumbnail()) {  ?>
+
                             <div class="thumb pb-lg-3 pb-5">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/post/01.jpg" alt="img">
+                                <?php the_post_thumbnail('full') ?>
                             </div>
+
+                            <?php } ?>
                             <div class="blog-post-item-wrap">
                                 <div class="post-content">
                                     <h6>Fashion</h6>
-                                    <h4><a href="single.html">Designer Swimsuit</a></h4>
-                                    <p>Nam rutrum suscipit orci ut ultrices. Sed arcu orci, curs quis augue porta
-                                        feugiat posuere nisi. Fusce fringilla am etiam sit ameeque vitae elit
-                                        condimentum auctor...</p>
+                                    <h4><a href="single.html"><?php echo the_title() ?></a></h4>
+                                    <p><?php echo the_content() ?></p>
                                     <div class="post-meta">
                                         <ul>
                                             <li>By</li>
-                                            <li><a href="#">Alison morgan</a></li>
-                                            <li>May 8, 2017</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="thumb pb-lg-3 pb-5">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/featured/8.jpg"
-                                    alt="img">
-                            </div>
-                            <div class="blog-post-item-wrap">
-                                <div class="post-content">
-                                    <h6>HEALTH</h6>
-                                    <h4><a href="single.html">Sugar Regulation</a></h4>
-                                    <p>Nam rutrum suscipit orci ut ultrices. Sed arcu orci, curs quis augue porta
-                                        feugiat posuere nisi. Fusce fringilla am etiam sit ameeque vitae elit
-                                        condimentum auctor...</p>
-                                    <div class="post-meta">
-                                        <ul>
-                                            <li>By</li>
-                                            <li><a href="#">Alison morgan</a></li>
-                                            <li>May 8, 2017</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="thumb pb-lg-3 pb-5">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/post/5.jpg" alt="img">
-                            </div>
-                            <div class="blog-post-item-wrap">
-                                <div class="post-content">
-                                    <h6>TRAVEL</h6>
-                                    <h4><a href="single.html">Arrival In Florence</a></h4>
-                                    <p>Nam rutrum suscipit orci ut ultrices. Sed arcu orci, curs quis augue porta
-                                        feugiat posuere nisi. Fusce fringilla am etiam sit ameeque vitae elit
-                                        condimentum auctor...</p>
-                                    <div class="post-meta">
-                                        <ul>
-                                            <li>By</li>
-                                            <li><a href="#">Alison morgan</a></li>
-                                            <li>May 8, 2017</li>
+                                            <li><a href="#"><?php echo the_author() ?></a></li>
+                                            <li><?php echo the_date() ?></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="thumb pb-lg-3 pb-5">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/featured/7.jpg"
-                                    alt="img">
-                            </div>
-                            <div class="blog-post-item-wrap">
-                                <div class="post-content">
-                                    <h6>FOOD</h6>
-                                    <h4><a href="single.html">Apricot Vanilla Cashew</a></h4>
-                                    <p>Nam rutrum suscipit orci ut ultrices. Sed arcu orci, curs quis augue porta
-                                        feugiat posuere nisi. Fusce fringilla am etiam sit ameeque vitae elit
-                                        condimentum auctor...</p>
-                                    <div class="post-meta">
-                                        <ul>
-                                            <li>By</li>
-                                            <li><a href="#">Alison morgan</a></li>
-                                            <li>May 8, 2017</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="thumb pb-lg-3 pb-5">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/featured/9.jpg"
-                                    alt="img">
-                            </div>
-                            <div class="blog-post-item-wrap">
-                                <div class="post-content">
-                                    <h6>FOOD</h6>
-                                    <h4><a href="single.html">Healthy Breakfast</a></h4>
-                                    <p>Nam rutrum suscipit orci ut ultrices. Sed arcu orci, curs quis augue porta
-                                        feugiat posuere nisi. Fusce fringilla am etiam sit ameeque vitae elit
-                                        condimentum auctor...</p>
-                                    <div class="post-meta">
-                                        <ul>
-                                            <li>By</li>
-                                            <li><a href="#">Alison morgan</a></li>
-                                            <li>May 8, 2017</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="thumb pb-lg-3 pb-5">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/featured/4.jpg"
-                                    alt="img">
-                            </div>
-                            <div class="blog-post-item-wrap">
-                                <div class="post-content">
-                                    <h6>FASHION</h6>
-                                    <h4><a href="single.html">Wear Lowaist Pants</a></h4>
-                                    <p>Nam rutrum suscipit orci ut ultrices. Sed arcu orci, curs quis augue porta
-                                        feugiat posuere nisi. Fusce fringilla am etiam sit ameeque vitae elit
-                                        condimentum auctor...</p>
-                                    <div class="post-meta">
-                                        <ul>
-                                            <li>By</li>
-                                            <li><a href="#">Alison morgan</a></li>
-                                            <li>May 8, 2017</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+                        <?php endwhile;?>
+
+
+
+
+
                     </div>
                     <div class="row">
                         <div class="col-lg-12">
@@ -257,8 +172,12 @@
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col-lg-3 col-md-4">
                     <div class="sidebar-area text-center">
+
+
                         <div class="widget widget_author_bio p-0 border-0">
                             <div class="thumb">
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/widget/bio.jpg"
@@ -269,6 +188,8 @@
                                 <h2>Michel</h2>
                             </div>
                         </div>
+
+
                         <div class="widget widget-subscribe-form">
                             <h2 class="widget-title">Subscribe</h2>
                             <p>Get Lawel Straight Your Inbox.</p>

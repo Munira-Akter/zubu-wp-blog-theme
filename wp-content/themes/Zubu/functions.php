@@ -35,11 +35,31 @@ register_post_type('zubu_author' ,[
         'all_items' => 'All Author',
         'add_new' => 'Add new Author',
         'add_new_item' => 'Add new Author',
+        'featured_image' => 'Author Image',
+        'set_featured_image' => 'Set Author Image',
     ],
 
-    'supports' => ['title' , 'editor' ,  'thumbnail'],
-    'menu_icon' => get_template_directory_uri().'/assets/img/icon/author.png'
+    'supports' => ['title' , 'editor' ,  'thumbnail' ],
+    'menu_icon' => get_template_directory_uri().'/assets/img/icon/author.png',
+    'menu_position' => 100,
     
+]);
+
+// Add Author tEXIONOMY
+
+register_taxonomy('author_tag','zubu_author',[
+    'public' => true,
+    'hierarchical' => true,
+
+]);
+
+
+// register widget sidebar
+
+register_sidebar([
+    'name' => 'Footer Widegrt',
+    'description' => '',
+    'id' => 'zubu-footer-one',
 ]);
 
 
@@ -85,13 +105,7 @@ function style_scripts(){
 add_action("wp_enqueue_scripts","style_scripts");
 
 
-// register widget sidebar
 
-register_sidebar([
-    'name' => 'Footer Widegrt',
-    'description' => '',
-    'id' => 'zubu-footer-one',
-])
 
 
 ?>

@@ -103,7 +103,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-9 col-md-8">
-                
+
+
                     <div class="blog-post-item-wrap">
                         <div class="post-content">
                             <h6>Fashion</h6>
@@ -179,15 +180,31 @@
 
 
                         <div class="widget widget_author_bio p-0 border-0">
+
+
+                            <?php 
+                            
+                          $author = new WP_Query([
+                              'post_type' => 'zubu_author',
+                          ]);
+                            
+                            ?>
+
+                            <?php  while( $author -> have_posts() ) :  $author  -> the_post()?>
+
+
                             <div class="thumb">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/widget/bio.jpg"
-                                    alt="img">
+                                <?php echo the_post_thumbnail() ?>
                             </div>
                             <div class="bio-data">
-                                <h4>CEO</h4>
-                                <h2>Michel</h2>
+                                <h4> <?php echo the_content() ?></h4>
+                                <h2> <?php echo the_title() ?></h2>
                             </div>
                         </div>
+
+                        <?php endwhile;?>
+
+
 
 
                         <div class="widget widget-subscribe-form">

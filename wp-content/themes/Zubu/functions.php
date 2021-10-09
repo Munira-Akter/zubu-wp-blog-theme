@@ -29,9 +29,17 @@ register_nav_menus([
 // register Author type
 
 register_post_type('zubu_author' ,[
+    'public' => true,
+    'labels' => [
+        'name' => 'Aurhor',
+        'all_items' => 'All Author',
+        'add_new' => 'Add new Author',
+        'add_new_item' => 'Add new Author',
+    ],
 
+    'supports' => ['title' , 'editor' ,  'thumbnail'],
+    'menu_icon' => get_template_directory_uri().'/assets/img/icon/author.png'
     
-
 ]);
 
 

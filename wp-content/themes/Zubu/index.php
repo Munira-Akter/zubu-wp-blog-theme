@@ -4,14 +4,7 @@
 <head>
     <meta charset=" <?php echo bloginfo('charset') ?>">
     <link rel="icon" href="assets/img/fevicon.png">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/animate.min.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/magnific.min.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/nice-select.min.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/owl.min.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/slick-slide.min.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/fontawesome.min.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/responsive.css">
+
 
     <!--Google Fonts-->
     <link
@@ -358,48 +351,7 @@
 
 
     <!-- all plugins here -->
-    <script
-        src="<?php echo get_template_directory_uri() ?>/<?php echo get_template_directory_uri() ?>/assets/js/jquery.3.6.min.js">
-    </script>
-    <script
-        src="<?php echo get_template_directory_uri() ?>/<?php echo get_template_directory_uri() ?>/assets/js/bootstrap.min.js">
-    </script>
-    <script
-        src="<?php echo get_template_directory_uri() ?>/<?php echo get_template_directory_uri() ?>/assets/js/imageloded.min.js">
-    </script>
-    <script
-        src="<?php echo get_template_directory_uri() ?>/<?php echo get_template_directory_uri() ?>/assets/js/counterup.js">
-    </script>
-    <script
-        src="<?php echo get_template_directory_uri() ?>/<?php echo get_template_directory_uri() ?>/assets/js/waypoint.js">
-    </script>
-    <script
-        src="<?php echo get_template_directory_uri() ?>/<?php echo get_template_directory_uri() ?>/assets/js/magnific.min.js">
-    </script>
-    <script
-        src="<?php echo get_template_directory_uri() ?>/<?php echo get_template_directory_uri() ?>/assets/js/isotope.pkgd.min.js">
-    </script>
-    <script
-        src="<?php echo get_template_directory_uri() ?>/<?php echo get_template_directory_uri() ?>/assets/js/nice-select.min.js">
-    </script>
-    <script
-        src="<?php echo get_template_directory_uri() ?>/<?php echo get_template_directory_uri() ?>/assets/js/fontawesome.min.js">
-    </script>
-    <script
-        src="<?php echo get_template_directory_uri() ?>/<?php echo get_template_directory_uri() ?>/assets/js/ripple.js">
-    </script>
-    <script
-        src="<?php echo get_template_directory_uri() ?>/<?php echo get_template_directory_uri() ?>/assets/js/owl.min.js">
-    </script>
-    <script
-        src="<?php echo get_template_directory_uri() ?>/<?php echo get_template_directory_uri() ?>/assets/js/slick-slider.min.js">
-    </script>
-    <script
-        src="<?php echo get_template_directory_uri() ?>/<?php echo get_template_directory_uri() ?>/assets/js/wow.min.js">
-    </script>
-    <!-- main js  -->
-    <script src="<?php echo get_template_directory_uri() ?>/assets/js/main.js"></script>
-
+   
     <?php echo wp_footer(); ?>
 </body>
 

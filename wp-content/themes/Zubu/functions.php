@@ -108,6 +108,8 @@ add_action("wp_enqueue_scripts","style_scripts");
 
 require_once ("option/ReduxCore/framework.php");
 require_once ("option/sample/config.php");
+require_once("cmb/init.php");
+require_once("cmb/config.php");
 
 
 

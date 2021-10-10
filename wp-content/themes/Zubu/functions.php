@@ -57,9 +57,9 @@ register_taxonomy('author_tag','zubu_author',[
 // register widget sidebar
 
 register_sidebar([
-    'name' => 'Footer Widegrt',
-    'description' => '',
-    'id' => 'zubu-footer-one',
+    'name' => 'Right Sidebar',
+    'description' => 'Right Sidebar',
+    'id' => 'rb',
 ]);
 
 
@@ -103,6 +103,12 @@ function style_scripts(){
 }
 
 add_action("wp_enqueue_scripts","style_scripts");
+
+// include redux framework
+
+require_once ("option/ReduxCore/framework.php");
+require_once ("option/sample/config.php");
+
 
 
 

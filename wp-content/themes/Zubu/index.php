@@ -200,7 +200,7 @@
 
 
 
-                        <div class="widget widget-subscribe-form">
+                        <!-- <div class="widget widget-subscribe-form">
                             <h2 class="widget-title">Subscribe</h2>
                             <p>Get Lawel Straight Your Inbox.</p>
                             <div class="single-input-wrap">
@@ -245,6 +245,14 @@
                                 </ul>
                             </div>
                         </div>
+ -->
+
+                        <?php
+
+                          dynamic_sidebar('rb')
+ ?>
+
+
                     </div>
                 </div>
             </div>
@@ -351,7 +359,7 @@
 
 
     <!-- all plugins here -->
-   
+
     <?php echo wp_footer(); ?>
 </body>
 
